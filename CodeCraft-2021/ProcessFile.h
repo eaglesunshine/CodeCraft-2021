@@ -3,9 +3,9 @@
 
 class ProcessFile {
 public:
-	Servers Servers;
-	VirtualMachines VirtualMachines;
-	Requests Requests;
+	ServersAll Servers;
+	VirtualMachinesAll VirtualMachines;
+	RequestsAll Requests;
 
 public:
 	bool ProcessInput(string fild_name);

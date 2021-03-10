@@ -15,7 +15,7 @@ struct Server {
 	double day_cost;	//每日能耗成本
 };
 
-struct Servers {
+struct ServersAll {
 	int type_num = 0;	//服务器类型数量
 	map<string, Server> servers;
 	//按cpu大小递增排序的服务器type
@@ -32,7 +32,7 @@ struct VirtualMachine {
 	int is_double;		//是否双节点部署
 };
 
-struct VirtualMachines {
+struct VirtualMachinesAll {
 	int type_num = 0;	//虚拟机类型数量
 	map<string, VirtualMachine> virtual_machines;
 };
@@ -50,7 +50,7 @@ struct DayRequest {
 	vector<Request> day_requests;
 };
 
-struct Requests {
+struct RequestsAll {
 	int day_num = 0;	//请求天数
 	map<int, DayRequest> requests;
 };
@@ -73,7 +73,7 @@ struct DaySchdule {
 	vector<Migration> RequestAddList;
 };
 
-struct DaySchedules {
+struct DaySchedulesAll {
 	int day_num = 0;
 	vector<DaySchdule> schedules;
 };

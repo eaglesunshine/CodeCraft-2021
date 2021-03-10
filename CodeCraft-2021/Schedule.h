@@ -6,7 +6,7 @@
 class Schedule {
 public:
 	ProcessFile ProcessData;
-	DaySchedules DaySchedules;
+	DaySchedulesAll DaySchedules;
 	map<int, ServerRemain> ServersInfo;		//<服务器ID，服务器剩余资源信息>
 public:
 	//输入
